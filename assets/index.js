@@ -25,7 +25,7 @@ form.addEventListener('submit', (event) => { //when submit function to get Lat a
     .then(json => {
       console.log(json);   //console log showing object. of weather information    
       document.querySelector("#City").innerHTML = " " + json.city.name;
-      document.querySelector('.weather-icon').innerHTML = '<img src="./openweathermap-api-icons/icons/' + json.list[0].weather[0].icon + '.png">';
+      document.querySelector('.weather-icon').innerHTML = '<img src="./assets/openweathermap-api-icons/icons/' + json.list[0].weather[0].icon + '.png">';
         document.querySelector("#date").innerHTML = json.list[0].dt_txt.split(' ')[0].slice(-12);
         document.querySelector("#Temp").innerHTML = "Temp:" + " " + json.list[0].main.temp;
         document.querySelector("#Windstat").innerHTML = "Wind speed:" + " " + json.list[0].wind.speed;
@@ -34,27 +34,27 @@ form.addEventListener('submit', (event) => { //when submit function to get Lat a
         document.querySelector("#tempcard1").innerHTML = "temp:" + " " + json.list[9].main.temp;
         document.querySelector("#windcard1").innerHTML = "wind:" + " " + json.list[9].wind.speed;
         document.querySelector("#humiditycard1").innerHTML = "humidity:" + " " + json.list[0].main.humidity;
-        document.querySelector('.weather-icon1').innerHTML = '<img src="./openweathermap-api-icons/icons/' + json.list[9].weather[0].icon + '.png">';
+        document.querySelector('.weather-icon1').innerHTML = '<img src="./assets/openweathermap-api-icons/icons/' + json.list[9].weather[0].icon + '.png">';
         document.querySelector("#datecard2").innerHTML = json.list[13].dt_txt.split(' ')[0].slice(-12);
         document.querySelector("#tempcard2").innerHTML = "temp:" + " " + json.list[13].main.temp;
         document.querySelector("#windcard2").innerHTML = "wind:" + " " + json.list[13].wind.speed;
         document.querySelector("#humiditycard2").innerHTML = "humidity:" + " " + json.list[13].main.humidity;
-        document.querySelector('.weather-icon2').innerHTML = '<img src="./openweathermap-api-icons/icons/' + json.list[13].weather[0].icon + '.png">';
+        document.querySelector('.weather-icon2').innerHTML = '<img src="./assets/openweathermap-api-icons/icons/' + json.list[13].weather[0].icon + '.png">';
         document.querySelector("#datecard3").innerHTML = json.list[25].dt_txt.split(' ')[0].slice(-12);
         document.querySelector("#tempcard3").innerHTML = "temp:" + " " + json.list[25].main.temp;
         document.querySelector("#windcard3").innerHTML = "wind:" + " " + json.list[25].wind.speed;
         document.querySelector("#humiditycard3").innerHTML = "humidity:" + " " + json.list[25].main.humidity;
-        document.querySelector('.weather-icon3').innerHTML = '<img src="./openweathermap-api-icons/icons/' + json.list[25].weather[0].icon + '.png">';
+        document.querySelector('.weather-icon3').innerHTML = '<img src="./assets/openweathermap-api-icons/icons/' + json.list[25].weather[0].icon + '.png">';
         document.querySelector("#datecard4").innerHTML = json.list[29].dt_txt.split(' ')[0].slice(-12);
         document.querySelector("#tempcard4").innerHTML = "temp:" + " " + json.list[29].main.temp;
         document.querySelector("#windcard4").innerHTML = "wind:" + " " + json.list[29].wind.speed;
         document.querySelector("#humiditycard4").innerHTML = "humidity:" + " " + json.list[29].main.humidity;
-        document.querySelector('.weather-icon4').innerHTML = '<img src="./openweathermap-api-icons/icons/' + json.list[29].weather[0].icon + '.png">';
+        document.querySelector('.weather-icon4').innerHTML = '<img src="./assets/openweathermap-api-icons/icons/' + json.list[29].weather[0].icon + '.png">';
         document.querySelector("#datecard5").innerHTML = json.list[37].dt_txt.split(' ')[0].slice(-12);
         document.querySelector("#tempcard5").innerHTML = "temp:" + " " + json.list[37].main.temp;
         document.querySelector("#windcard5").innerHTML = "wind:" + " " + json.list[37].wind.speed;
         document.querySelector("#humiditycard5").innerHTML = "humidity:" + " " + json.list[37].main.humidity;
-        document.querySelector('.weather-icon5').innerHTML = '<img src="./openweathermap-api-icons/icons/' + json.list[37].weather[0].icon + '.png">';
+        document.querySelector('.weather-icon5').innerHTML = '<img src="./assets/openweathermap-api-icons/icons/' + json.list[37].weather[0].icon + '.png">';
 
         
 
